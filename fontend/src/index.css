@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* src/index.css – thêm cuối file */
+/* src/index.css – thêm/đổi phần này */
+
+/* vát cạnh trái ~70° */
+.clip-angled-70 {
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%, 0 42%);
+}
+
+/* ...existing code... */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    /* opacity: 0.7; */
+  }
+  to {
+    transform: translateX(0);
+    /* opacity: 1; */
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.4, 0.2, 0.2, 1) both;
+}
+/* ...existing code... */
+
